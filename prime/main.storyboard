@@ -12,11 +12,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="prime" id="1Xt-HY-uBw">
+                            <menuItem title="macos2" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="prime" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="macos2" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About prime" id="5kV-Vb-QxS">
+                                        <menuItem title="About prime check" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -30,7 +30,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide prime" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide macos2" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -48,7 +48,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit prime" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit prime check" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -661,7 +661,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="prime Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="macos2 Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -706,52 +706,83 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="prime" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                    <view key="view" wantsLayer="YES" appearanceType="aqua" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="325"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZw-Ln-8cO">
-                                <rect key="frame" x="18" y="231" width="377" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Please enter a number to start with for prime checking" id="ETz-Vh-GUu">
-                                    <font key="font" metaFont="system" size="15"/>
-                                    <color key="textColor" red="0.081765227019999998" green="0.25131198760000001" blue="0.88436079030000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bz-GF-bxn">
-                                <rect key="frame" x="20" y="194" width="246" height="21"/>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ttN-Gm-Rvk">
+                                <rect key="frame" x="20" y="276" width="246" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <shadow key="shadow" blurRadius="24">
                                     <color key="color" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </shadow>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" placeholderString="prime number goes here" bezelStyle="round" id="Sh5-qj-DAT">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" placeholderString="prime number goes here" bezelStyle="round" id="YWy-VM-bUA">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIu-Mi-A9O">
-                                <rect key="frame" x="298" y="187" width="79" height="32"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="15c-XQ-0Dz">
+                                <rect key="frame" x="18" y="305" width="377" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Check" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vBC-iQ-hdo">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Please enter a number to start with for prime checking" id="kW1-7p-ZTa">
+                                    <font key="font" metaFont="system" size="15"/>
+                                    <color key="textColor" red="0.081765227019786835" green="0.25131198763847351" blue="0.88436079025268555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ct0-S6-wLp">
+                                <rect key="frame" x="277" y="269" width="79" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Check" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DyI-cf-IMz">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="check_prime:" target="XfG-lQ-9wD" id="Lbz-yb-Ddo"/>
+                                    <action selector="check:" target="XfG-lQ-9wD" id="ZEa-9Q-9Zz"/>
                                 </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NLi-vw-rr1">
+                                <rect key="frame" x="20" y="20" width="246" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="TSSSLSDSKSLSSSTSBSBSBSBSBSBSBSBSLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLBWBWBWBWBWBWBWBWTWSWLWDWKWLWSWTW" drawsBackground="YES" id="uRZ-IE-67V">
+                                    <font key="font" size="24" name="Courier"/>
+                                    <string key="title">TSSSLSDSKSLSSSTSBSBSBSBSBSBSBSBSLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLBWBWBWBWBWBWBWBWTWSWLWDWKWLWSWTW</string>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <allowedInputSourceLocales>
+                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                    </allowedInputSourceLocales>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="chessinputchanged:" target="XfG-lQ-9wD" id="Qre-T5-kNp"/>
+                                </connections>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ak7-hG-r5M">
+                                <rect key="frame" x="274" y="241" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="or here..." drawsBackground="YES" id="EFG-2e-KJq">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="NRn-rC-6s5"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="label_field" destination="cZw-Ln-8cO" id="kqK-wU-hdE"/>
-                        <outlet property="prime_field" destination="9bz-GF-bxn" id="ifR-r8-riU"/>
+                        <outlet property="checkbutton" destination="Ct0-S6-wLp" id="fnk-91-eiV"/>
+                        <outlet property="chessinput" destination="NLi-vw-rr1" id="jKW-Xx-zDN"/>
+                        <outlet property="label_field" destination="15c-XQ-0Dz" id="1Sh-tV-jiO"/>
+                        <outlet property="labelfield" destination="15c-XQ-0Dz" id="oqJ-Cs-5M4"/>
+                        <outlet property="prime_field" destination="YWy-VM-bUA" id="Gih-vC-TSx"/>
+                        <outlet property="primefield" destination="ttN-Gm-Rvk" id="Jbm-Ad-dRC"/>
+                        <outlet property="primefieldnumber" destination="Ak7-hG-r5M" id="5jl-j1-mXY"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="682.5"/>
         </scene>
     </scenes>
 </document>
